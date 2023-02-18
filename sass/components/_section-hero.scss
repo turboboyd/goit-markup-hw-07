@@ -12,7 +12,7 @@
 .hero-background {
     padding: 112px 0;
     max-width: 1440px;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people-office.jpg);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -30,7 +30,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-background {
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../images/people-office@2x.jpg');
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office@2x.jpg');
     }
 }
 
