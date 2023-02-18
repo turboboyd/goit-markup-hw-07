@@ -1,0 +1,132 @@
+textarea {
+    resize: none;
+}
+
+.form {
+    &-title {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        @extend %letter-spacing;
+        color: $title-text-color;
+        margin-bottom: 16px;
+    }
+
+    &-icon {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+        display: flex;
+        fill: $title-text-color;
+        transition: fill $transition-primari
+    }
+
+    &-box {
+        position: relative;
+    }
+
+    &-button {
+        min-width: 169px;
+    }
+}
+
+
+
+.form-field {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+    text-align: left;
+
+    span {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        margin: 0;
+        padding: 0 18px 0 38px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        background: unset;
+        transition: border $transition-primari;
+
+        &:hover,
+        &:focus {
+            border-color: $primary-brand;
+            outline: none;
+        }
+    }
+
+
+    textarea {
+        height: 120px;
+        padding: 8px 16px;
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.33;
+            letter-spacing: 0.04em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+}
+
+
+.form-field input:hover+.form-icon,
+.form-field :focus-within svg {
+    fill: $primary-brand;
+}
+
+.form-textarea {
+    margin-bottom: 16px;
+}
+
+
+/* fsaf */
+
+.form-privacy {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-bottom: 24px;
+
+    &-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 1.25px solid #2E2F42;
+        border-radius: 2px;
+        margin-right: 8px;
+        transition: border-color $transition-primari, background-color $transition-primari;
+
+        svg {
+            opacity: 0;
+            transition: opacity $transition-primari;
+            fill: #F4F4FD;
+        }
+    }
+
+    &-link {
+        color: $primary-brand;
+    }
+}
+
+.checkbox:checked+.form-privacy-icon,
+.checkbox:checked+.form-privacy-icon svg {
+    background-color: $pressed-state;
+    border-color: $pressed-state;
+    background-origin: border-box;
+    opacity: 1;
+}

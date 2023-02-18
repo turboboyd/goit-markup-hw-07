@@ -1,0 +1,26 @@
+.section-title {
+    color: $title-text-color;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    margin-bottom: 72px;
+    @extend %letter-spacing;
+}
+
+%title {
+    color: $title-text-color;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: $gap-bottom;
+    @extend %letter-spacing;
+}
+
+%list {
+    display: flex;
+    justify-content: space-between;
+}
+
+%letter-spacing{
+    letter-spacing: 0.02em;
+}
