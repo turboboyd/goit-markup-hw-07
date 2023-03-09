@@ -1,7 +1,6 @@
 (() => {
   const buttons = document.querySelectorAll('[data-filter]');
   const cards = document.querySelectorAll('[data-card]');
-​
   function filter(category, items) {
     items.forEach(item => {
       const categoryCard = item.dataset.card.toLowerCase();
@@ -14,13 +13,11 @@
       }
     });
   }
-​
   buttons.forEach(button => {
     button.addEventListener('click', e => {
       const currentCategory = button.dataset.filter.toLowerCase();
       const target = e.target;
       filter(currentCategory, cards);
-​
       buttons.forEach(button => button.classList.remove('is-active'));
       target.classList.add('is-active');
     });
