@@ -332,6 +332,7 @@ img {
   margin: 0 auto;
   background-size: cover;
 }
+
 @media screen and (max-width: 480px) {
   .hero-background {
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobail.jpg);
